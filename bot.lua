@@ -709,7 +709,7 @@ return send(msg.chat_id_, msg.id_, "انجام شد ✅\nحال برای تعی�
 						end	
 					end
 					return send(msg.chat_id_, msg.id_, "<i>کاربر مورد نظر به تمام سوپرگروهای من دعوت شد.</i>")
-				elseif (text:match("^(online)$") and not msg.forward_info_)then
+				elseif (text:match("^(تانلاين)$") and not msg.forward_info_)then
 					return tdcli_function({
 						ID = "ForwardMessages",
 						chat_id_ = msg.chat_id_,
